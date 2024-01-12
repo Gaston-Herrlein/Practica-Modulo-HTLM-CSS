@@ -1,0 +1,26 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer-Container {
+    background-color: whitesmoke;
+    padding: 2px 25dvw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-img {
+    height: 32px;
+}
+
+.footer-anchor{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.footer-span{
+    font-size: 12px;
+    color: black;
+}
