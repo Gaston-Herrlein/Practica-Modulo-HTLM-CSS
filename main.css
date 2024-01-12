@@ -1,9 +1,16 @@
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+:root{
+    --primaty-color: #1CDE1A;
+    --secondary-color: #4398AD;
+    --bg-color-footer: whitesmoke;
+    --primary-text-color: white; 
+    --secondary-text-color: black;
+}
 
 .footer-Container {
-    background-color: whitesmoke;
+    background-color: var(--bg-color-footer);
     padding: 2px 25dvw;
     display: flex;
     align-items: center;
@@ -22,5 +29,5 @@
 
 .footer-span{
     font-size: 12px;
-    color: black;
+    color: var(--secondary-text-color);
 }
