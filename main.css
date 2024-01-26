@@ -15,6 +15,7 @@
     --text-size-Title: 1.1rem;
 }
 
+/*--------------HEADER STYLE-------------*/
 header {
     padding: 5px    ;
     background-color: var(--bg-color-footer);
@@ -81,7 +82,9 @@ img.menu-image {
 input.menu-hamburguesa:checked + .ul-menu {
     visibility: visible;
 }
+/*---------FINISH HEADER STYLE -----------*/
 
+/*---------BANNER STYLE-----------------*/
 .banner-container {  
     height: 100dvh;
     position: relative;
@@ -123,7 +126,9 @@ input.menu-hamburguesa:checked + .ul-menu {
 .banner-text p {
     font-size: var(--text-size);
 }
+/*-----------FINISH BANNER STYLE-------------*/
 
+/*------------FOOTER STYKE-------------*/
 .footer-Container {
     background-color: var(--bg-color-footer);
     display: flex;
@@ -132,18 +137,27 @@ input.menu-hamburguesa:checked + .ul-menu {
 }
 
 .footer-img {
-    height: 16px;
+    height: 32px;
 }
 
 .footer-anchor{
+    padding-top: 5px;
     display: flex;
     flex-direction: column;
     text-decoration: none;
 }
 
 .footer-span{
-    font-size: 0.4rem;
+    font-size: 0.8rem;
     color: var(--secondary-text-color);
+}
+/*---------FINISH FOOTER STYLE--------*/
+
+
+@media (min-width:425px){
+    .banner-image{
+        background-image: url('/assets/Banner-425px.jpg');
+    }
 }
 
 @media (min-width:768px){
@@ -165,6 +179,11 @@ input.menu-hamburguesa:checked + .ul-menu {
         padding: .2rem .7rem;
     }
     .li-menu:hover{
-        background-color: #5f1192;
+        border-radius: 50%;
+        background-color: rgba(0, 250, 154, 0.1);
     }
+
+    /* .banner-image{
+        background-image: url('/assets/Banner.jpg');
+    } */
 }
