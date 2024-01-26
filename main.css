@@ -15,6 +15,73 @@
     --text-size-Title: 1.1rem;
 }
 
+header {
+    padding: 5px    ;
+    background-color: var(--bg-color-footer);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    height: 32px;
+    border-radius: 50%;
+}
+.navBar-menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap ;
+    position: relative;
+    z-index: 500;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.ul-menu {
+    width: 100dvw;
+    padding: 0.4rem 0;
+    background-color: var(--bg-color-footer);
+    position: absolute;
+    top: 41px;
+    /*De la misma forma tengo que dezplazar 5px del tamaño del viewport
+    a la derecha para ocupar toda la pantalla*/
+    right: -5px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    /* transition: all 0.5s; */
+}
+
+.li-menu {
+    font-size: var(--text-size);
+}
+
+input.menu-hamburguesa {
+    display: none
+}
+
+img.menu-image {
+    height: 32px;
+    cursor: pointer;
+}
+
+input.menu-hamburguesa:checked + .ul-menu {
+    visibility: visible;
+}
+
 .banner-container {  
     height: 100dvh;
     position: relative;
@@ -30,8 +97,8 @@
     top: 0;
     bottom: 0;
     right: 0;
-    background-image: url('/assets/Banner.jpg');
-    background-size: 450px;
+    background-image: url('/assets/Banner-movil.jpg');
+    background-size: 370px;
 }
 
 .banner-text{
@@ -44,17 +111,16 @@
 }
 
 .banner-text h2 {
-    margin: 0;
-    font-size: 1.1rem;
+    margin: 0 0 5px 0;
+    font-size: var(--text-size-Title);
 }
 
 .banner-text h1{
-    margin: 0;
+    margin: 0 0 5px 0;
     font-size: var(--text-size-Title);
 }
 
 .banner-text p {
-    margin-top: 7px;
     font-size: var(--text-size);
 }
 
@@ -66,7 +132,7 @@
 }
 
 .footer-img {
-    height: 32px;
+    height: 16px;
 }
 
 .footer-anchor{
@@ -76,6 +142,29 @@
 }
 
 .footer-span{
-    font-size: 12px;
+    font-size: 0.4rem;
     color: var(--secondary-text-color);
+}
+
+@media (min-width:768px){
+    .label-menu{
+        display: none
+    }
+
+    .ul-menu{
+        visibility: visible;
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .li-menu{
+        font-size: var(--text-size);
+        /* transition: all .3s; */
+        padding: .2rem .7rem;
+    }
+    .li-menu:hover{
+        background-color: #5f1192;
+    }
 }
