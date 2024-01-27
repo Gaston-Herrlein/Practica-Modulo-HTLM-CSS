@@ -13,6 +13,7 @@
     --secondary-text-color: black;
     --text-size: 0.9rem;
     --text-size-Title: 1.1rem;
+    font-size: 16px;
 }
 
 /*--------------HEADER STYLE-------------*/
@@ -25,9 +26,10 @@ header {
 }
 
 .brand {
-    height: 32px;
+    height: 36px;
     border-radius: 50%;
 }
+
 .navBar-menu {
     height: 100%;
     display: flex;
@@ -88,6 +90,7 @@ input.menu-hamburguesa:checked + .ul-menu {
 .banner-container {  
     height: 100dvh;
     position: relative;
+    margin-bottom: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,6 +130,46 @@ input.menu-hamburguesa:checked + .ul-menu {
     font-size: var(--text-size);
 }
 /*-----------FINISH BANNER STYLE-------------*/
+
+/*-----------ABOUT ME STYLE---------------------*/
+.AboutMe-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.AboutMe-container h2 {
+    font-size: var(--text-size-Title);
+    margin-bottom: 0.3rem;
+}
+
+.AboutMe-text p{
+    margin: 0px 1rem 0.3rem 1rem;
+    text-wrap: wrap;
+    text-align: justify;
+    text-indent: 0.5rem;
+    font-size: var(--text-size);
+}
+
+.AboutMe-tet-shadow{
+    display: block;
+    margin: 0px 1rem 0.5rem 1rem;
+    text-wrap: wrap;
+    text-indent: 0.3rem;
+    font-size: 1rem;
+    color:rgba(60, 255, 170);
+    font-weight: bold;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.section-container-grid{
+    display: grid;
+}
+
+/*---------FINISH ABOUT ME STYLE-----------------*/
 
 /*------------FOOTER STYKE-------------*/
 .footer-Container {
@@ -175,15 +218,11 @@ input.menu-hamburguesa:checked + .ul-menu {
     }
     .li-menu{
         font-size: var(--text-size);
-        /* transition: all .3s; */
+        transition: all .5s;
         padding: .2rem .7rem;
     }
     .li-menu:hover{
         border-radius: 50%;
-        background-color: rgba(0, 250, 154, 0.1);
+        background-color: rgba(0, 250, 154, 0.2);
     }
-
-    /* .banner-image{
-        background-image: url('/assets/Banner.jpg');
-    } */
 }
