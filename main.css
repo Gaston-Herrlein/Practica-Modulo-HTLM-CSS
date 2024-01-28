@@ -365,9 +365,67 @@ div.rotate-20 > div.circular-after-progress{
       transform: rotate(-150deg);
     }
   }
-
-
 /*---------FINISH ABOUT ME STYLE-----------------*/
+
+/*------------CONTACT STYLE*----------------*/
+.aling-center {
+text-align: center;
+}
+
+.container-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:baseline
+}
+
+.form-element > input{
+    background-color: rgba(0,0,0,0.1);
+}
+
+.form-element > textarea {
+    width: 80%;
+    max-width: 425px;
+    height: 5rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.form-element >  label {
+    text-decoration: dashed;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-reset {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4398AD;
+    color: snow;
+    font-weight: bold;
+}
+
+.btn-submit{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2398cD;
+    color: snow;
+    font-weight: bold;
+}
+
+/*--------------FIMISH CONTACT STYLE*/
 
 /*------------FOOTER STYKE-------------*/
 .footer-Container {
