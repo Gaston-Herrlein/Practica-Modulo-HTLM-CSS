@@ -13,7 +13,16 @@
     --secondary-text-color: black;
     --text-size: 0.9rem;
     --text-size-Title: 1.1rem;
+    --text-size-brand: 0.7rem;
     font-size: 16px;
+}
+
+.mb-s{
+    margin-bottom: 0.7rem;
+}
+
+.mb-l{
+    margin-bottom: 1.5rem;
 }
 
 /*--------------HEADER STYLE-------------*/
@@ -144,7 +153,6 @@ input.menu-hamburguesa:checked + .ul-menu {
 
 .AboutMe-container h2 {
     font-size: var(--text-size-Title);
-    margin-bottom: 0.3rem;
 }
 
 .AboutMe-text p{
@@ -157,7 +165,7 @@ input.menu-hamburguesa:checked + .ul-menu {
 
 .AboutMe-tet-shadow{
     display: block;
-    margin: 0px 1rem 0.5rem 1rem;
+    text-align: center;
     text-wrap: wrap;
     text-indent: 0.3rem;
     font-size: 1rem;
@@ -170,13 +178,12 @@ input.menu-hamburguesa:checked + .ul-menu {
     display: grid;
     grid-template-columns: auto;
     grid-template-areas: "myArea";
-    gap: 30px;
+    gap: 0.1rem;
     justify-content: space-around;
     align-content: center;
 }
 
 .skills-container {
-    margin-bottom: 1rem;
     display: flex;
     overflow: hidden;
     flex-wrap: wrap;
@@ -218,7 +225,7 @@ input.menu-hamburguesa:checked + .ul-menu {
   transform: scale(1.1);
 }
 
-.circular-brand-html{
+.circular-brand-image{
     position:absolute;
     z-index: 4;
     width: 1.6rem;
@@ -226,41 +233,139 @@ input.menu-hamburguesa:checked + .ul-menu {
     left: 63px;
 }
 
+img.brand-python{
+    width: 3.3rem;
+    top: 30px;
+    left: 48px;
+}
+
 .circular-text {
     color: var(--secondary-text-color);
+    font-size: var(--text-size-brand);
     text-align: center;
     line-height: 4rem;
 }
 
-div.html {
-  animation-name: rotate-html;
+div.rotate-80 {
+  animation-name: rotate-80;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-div.html > div.circular-after-progress{
-  animation-name: rotate-html-after;
+div.rotate-80 > div.circular-after-progress{
+  animation-name: rotate-80-after;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-@keyframes rotate-html {
+div.rotate-60 {
+    animation-name: rotate-60;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+  
+div.rotate-60 > div.circular-after-progress{
+    animation-name: rotate-60-after;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+div.rotate-50 {
+    animation-name: rotate-50;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+  
+div.rotate-50 > div.circular-after-progress{
+    animation-name: rotate-50-after;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+div.rotate-20 {
+    animation-name: rotate-20;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+  
+div.rotate-20 > div.circular-after-progress{
+    animation-name: rotate-20-after;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate-20 {
   0%{
     transform: rotate(0deg);
   }
   100%{
-    transform: rotate(90deg);
+    transform: rotate(40deg);
   }
 }
 
-@keyframes rotate-html-after {
+@keyframes rotate-20-after {
   0%{
     transform: rotate(0deg);
   }
   100%{
-    transform: rotate(-90deg);
+    transform: rotate(-40deg);
   }
 }
+
+@keyframes rotate-50 {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(90deg);
+    }
+  }
+  
+  @keyframes rotate-50-after {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(-90deg);
+    }
+  }
+
+  @keyframes rotate-60 {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(110deg);
+    }
+  }
+  
+  @keyframes rotate-60-after {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(-110deg);
+    }
+  }
+
+  @keyframes rotate-80 {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(150deg);
+    }
+  }
+  
+  @keyframes rotate-80-after {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(-150deg);
+    }
+  }
+
 
 /*---------FINISH ABOUT ME STYLE-----------------*/
 
@@ -294,6 +399,11 @@ div.html > div.circular-after-progress{
     .banner-image{
         background-image: url('/assets/Banner-425px.jpg');
     }
+    .section-container-grid{
+        grid-template-columns: auto auto;
+        grid-template-areas: "myArea myArea";
+        gap: 1rem;
+    }
 }
 
 @media (min-width:768px){
@@ -323,8 +433,8 @@ div.html > div.circular-after-progress{
 
 /*---------------MEDIA QUERY DE SKILL----------*/
 .section-container-grid{
-    grid-template-columns: auto auto auto;
-    grid-template-areas: "myArea myArea myArea";
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: "myArea myArea myArea myArea";
+    gap: 1.5rem;
 }
-
 }
