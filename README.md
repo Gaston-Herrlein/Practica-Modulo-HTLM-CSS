@@ -24,30 +24,30 @@ Pagina desplegada: ...
 
 ## Header
 
-### Consignas
+#### Consignas
 
 - Crear un header con barra de navegación, la cual tiene que tener enlaces a cada elemento del portfolio
 - Todos los links tendrán que tener el estado hover suavizado
 - Podemos hacer un menu burger con solo CSS y un input checkbox, para no usar JS pero esto es bastante avanzado (**opcional**)
 
-### Resultado
+#### Resultado
 
 ·······················
 
 ## Main
 
-### Consigna
+#### Consigna
 
 - Banner que deberá tener una imagen de fondo. En pantallas moviles deberá ser otra, para darle más sentido al diseño en dicha resolución.
 - Sección con una descripción de nosotros y con nuestras habilidades como barras de progreso. Estas barras de progreso tienen que estar animadas con animaciones css
 
-### Resultado
+#### Resultado
 
 ·····················
 
 ## Contact
 
-### Consigna
+#### Consigna
 
 - Formulario de contacto con estos inputs. Todos ellos tienen que tener tanto los tipos correctos como la validación html
   - Nombre
@@ -58,13 +58,13 @@ Pagina desplegada: ...
   - Mensaje (**textarea**)
   - Botones de guardado y reset
 
-### Resultaco
+#### Resultaco
 
 ···················
 
 ## Project
 
-### Consigna
+#### Consigna
 
 - Nueva página que tenga un video que se reproduzca al entrar en la web y aparezca con una animación de fadeIn.
 - En la nueva página crear un grid con nuestros proyectos.
@@ -75,10 +75,10 @@ Pagina desplegada: ...
 
 ## Footer
 
-### Consigna
+#### Consigna
 
 - Footer con links a nuestras redes sociales
 
-### Resultado
+#### Resultado
 
 ···
