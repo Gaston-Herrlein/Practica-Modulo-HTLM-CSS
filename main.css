@@ -377,19 +377,45 @@ div.rotate-20 > div.circular-after-progress{
     flex-direction: column;
 }
 
-.bg-secondary{
-    background-color: var(--bg-color-secondary);
+.container-flex-row{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 7rem;
 }
 
-.container-flex-column{
+.form-element {
+    font-weight: bold;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-element.container-flex {
     align-items:baseline
+}
+
+div.container-flex-row > img {
+    height: 250px;
+    width: auto;
+    border-radius: 15px;
+    display: none;
+}
+
+.bg-contact{
+    background: linear-gradient(0deg, rgba(0, 49, 64, 1) 0%, rgba(0,49,64, 1) 30%, transparent 100%)
 }
 
 .form-element > input{
     background-color: rgba(0,0,0,0.1);
+    width: 70%;
+    border-radius: 5px;
+    padding: 0.1rem;
+}
+
+.color-white{
+    color:rgba(255,255,255,0.8)
 }
 
 .form-element > textarea {
@@ -397,10 +423,6 @@ div.rotate-20 > div.circular-after-progress{
     max-width: 425px;
     height: 5rem;
     background-color: rgba(0,0,0,0.1);
-}
-
-.form-element >  label {
-    text-decoration: dashed;
 }
 
 .form-buttons {
@@ -491,15 +513,24 @@ div.rotate-20 > div.circular-after-progress{
         border-radius: 50%;
         background-color: rgba(0, 250, 154, 0.2);
     }
-/*------- FIN HEADER*-------------/
+/*--------------------------------------------/
 
 /*---------------MEDIA QUERY DE SKILL----------*/
-.section-container-grid{
-    grid-template-columns: auto auto auto auto;
-    grid-template-areas: "myArea myArea myArea myArea";
-    gap: 1.5rem;
-}
-/*--------------FINISH SKILL------------------*/
+    .section-container-grid{
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas: "myArea myArea myArea myArea";
+        gap: 1.5rem;
+    }
+/*---------------------------------------------*/
+
+/*--------------MEDIA QUERY CONTACT-------------*/
+    div.container-flex-row > img {
+        display: block;
+    }
+    /* .bg-contact{
+        background: linear-gradient(0deg, rgba(0, 49, 64, 1) 0%, transparent 100%)
+    } */
+/*------------------------------------------------*/    
 }
 
 @media (min-width:1440px){
@@ -509,5 +540,5 @@ div.rotate-20 > div.circular-after-progress{
         grid-template-areas: "myArea myArea myArea myArea myArea myArea";
         gap: 1.5rem;
     }
-/*---------------FINISH SKILL----------*/
+/*-----------------------------------------------*/
 }

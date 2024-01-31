@@ -194,66 +194,69 @@
         </section>
     </main>
 
-    <div class="container-flex bg-secondary">
+    <div class="container-flex bg-contact">
         <h2>Contacto</h2>
-        <form method="post" action="/contact">
-            <div class="form-elemen mb-s">
-                <label for="firstname">Nombre</label>
-                <input style="background-color: rgba(0,0,0,0.1)" name="firstname" type="text" id="firstname" required />
-            </div>
-
-            <div class="form-element mb-s">
-                <label for="lastname">Apellido</label>
-                <input name="lastname" type="text" id="lastname" required />
-            </div>
-
-            <div class="form-element mb-s">
-                <label for="phone">Telefono</label>
-                <input type="tel" id="phone" name="Telefono" required placeholder="111-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Formato 111-123-4567" />
-            </div>
-
-            <fieldset class="form-element mb-s">
-                <legend>¿Cómo me conociste?</legend>
-                <ul class="form-element-ul">
-                    <li>
-                        <label for="university">universidad</label>
-                        <input type="radio" id="university" name="Como-me-conociste" value="university" checked />
-                    </li>
-                    <li>
-                        <label for="keepcoding">Keepcoding kick-off</label>
-                        <input type="radio" id="keepcoding" name="Como-me-conociste" value="keepcoding" />
-                    </li>
-                    <li>
-                        <label for="school">Escuela</label>
-                        <input type="radio" id="school" name="Como-me-conociste" value="school" />
-                    </li>
-                    <li>
-                        <label for="github">Github</label>
-                        <input type="radio" id="github" name="Como-me-conociste" value="github" />
-                    </li>
-                </ul>
-            </fieldset>
-
-            <div class="form-element mb-s">
-                <label for="githubUser">Usuario Github</label>
-                <input type="text" id="githubUser" name="githubUser" required placeholder="@username" pattern="^@[^\s]+" title="Format @username" />
-            </div>
-
-            <div class="form-element container-flex-column mb-s">
-                <label for="message">Mensaje</label>
-                <textarea name="message" id="message" required></textarea>
-            </div>
-
-            <div class="form-element form-element-checkbox mb-s">
-                <label for="newsletter">¿Quiere suscribirse a la newsletter?</label>
-                <input type="checkbox" name="newsletter" id="newsletter" value="selected" checked />
-            </div>
-
-            <div class="form-buttons mb-l">
-                <input class="btn-reset" type="reset" value="Reset form" />
-                <input class="btn-submit" type="submit" value="Submit" />
-            </div>
-        </form>
+        <div class="container-flex-row">
+            <img src="./assets/giphy.gif" alt="Programando">
+            <form method="post" action="/contact">
+                <div class="form-element mb-s">
+                    <label for="firstname">Nombre</label>
+                    <input name="firstname" type="text" id="firstname" required placeholder="Gastón"/>
+                </div>
+    
+                <div class="form-element mb-s">
+                    <label for="lastname">Apellido</label>
+                    <input name="lastname" type="text" id="lastname" required placeholder="Herrlein"/>
+                </div>
+    
+                <div class="form-element mb-s">
+                    <label for="phone">Telefono</label>
+                    <input type="tel" id="phone" name="Telefono" required placeholder="111-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Formato 111-123-4567" />
+                </div>
+    
+                <fieldset class="form-element mb-s">
+                    <legend>¿Cómo me conociste?</legend>
+                    <ul>
+                        <li>
+                            <label for="university">Universidad</label>
+                            <input type="radio" id="university" name="Como-me-conociste" value="university" checked />
+                        </li>
+                        <li>
+                            <label for="keepcoding">Keepcoding kick-off</label>
+                            <input type="radio" id="keepcoding" name="Como-me-conociste" value="keepcoding" />
+                        </li>
+                        <li>
+                            <label for="school">Escuela</label>
+                            <input type="radio" id="school" name="Como-me-conociste" value="school" />
+                        </li>
+                        <li>
+                            <label for="github">Github</label>
+                            <input type="radio" id="github" name="Como-me-conociste" value="github" />
+                        </li>
+                    </ul>
+                </fieldset>
+    
+                <div class="form-element color-white mb-s">
+                    <label for="githubUser">Usuario Github</label>
+                    <input type="text" id="githubUser" name="githubUser" required placeholder="@username" pattern="^@[^\s]+" title="Format @username" />
+                </div>
+    
+                <div class="form-element container-flex color-white mb-s">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" required></textarea>
+                </div>
+    
+                <div class="form-element color-white form-element-checkbox mb-s">
+                    <label for="newsletter">¿Quiere suscribirse a la newsletter?</label>
+                    <input type="checkbox" name="newsletter" id="newsletter" value="selected" checked />
+                </div>
+    
+                <div class="form-buttons mb-l">
+                    <input class="btn-reset" type="reset" value="Reset form" />
+                    <input class="btn-submit" type="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
     </div>
     <footer class="footer-Container">
         <a class="footer-anchor" href="https://github.com/Gaston-Herrlein" target="_blank">
