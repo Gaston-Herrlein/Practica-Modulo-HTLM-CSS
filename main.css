@@ -83,6 +83,11 @@ ol, ul {
     font-size: var(--text-size);
 }
 
+.li-menu:hover{
+    border-radius: 50%;
+    background-color: rgba(0, 250, 154, 0.2);
+}
+
 input.menu-hamburguesa {
     display: none
 }
@@ -508,10 +513,6 @@ div.container-flex-row > img {
         font-size: var(--text-size);
         transition: all .5s;
         padding: .2rem .7rem;
-    }
-    .li-menu:hover{
-        border-radius: 50%;
-        background-color: rgba(0, 250, 154, 0.2);
     }
 /*--------------------------------------------/
 
