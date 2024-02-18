@@ -82,3 +82,7 @@ Pagina desplegada: ...
 #### Resultado
 
 ···
+
+## RECURSOS UTILIZADOS
+
+- [Contraste y paleta de colores]('https://coolors.co/')
