@@ -1,0 +1,54 @@
+.brand {
+  height: 36px;
+  border-radius: 50%;
+}
+
+.navBar-menu {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 500;
+}
+
+.ul-menu {
+  width: 100dvw;
+  padding: 0.4rem 0;
+  background-color: var(--bg-color-footer);
+  position: absolute;
+  top: 41px;
+  /*De la misma forma tengo que dezplazar 5px del tamaño del viewport
+      a la derecha para ocupar toda la pantalla*/
+  right: -5px;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  /* transition: all 0.5s; */
+}
+
+.li-menu {
+  font-size: var(--text-size);
+}
+
+.li-menu:hover {
+  border-radius: 50%;
+  background-color: rgba(0, 250, 154, 0.2);
+}
+
+input.menu-hamburguesa {
+  display: none;
+}
+
+img.menu-image {
+  height: 32px;
+  cursor: pointer;
+}
+
+input.menu-hamburguesa:checked + .ul-menu {
+  visibility: visible;
+}
