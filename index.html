@@ -211,7 +211,7 @@
     
                 <div class="form-element mb-s">
                     <label for="phone">Telefono</label>
-                    <input type="tel" id="phone" name="Telefono" required placeholder="111-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Formato 111-123-4567" />
+                    <input type="tel" id="phone" name="Telefono" required placeholder="111 123456" pattern="[0-9]{3} [0-9]{6}" title="Formato 111-123-4567" />
                 </div>
     
                 <fieldset class="form-element mb-s">
@@ -243,7 +243,7 @@
     
                 <div class="form-element container-flex color-white mb-s">
                     <label for="message">Mensaje</label>
-                    <textarea name="message" id="message" required></textarea>
+                    <textarea name="message" id="message" required maxlength="180"></textarea>
                 </div>
     
                 <div class="form-element color-white form-element-checkbox mb-s">
@@ -264,6 +264,8 @@
             </form>
         </div>
     </div>
+
+
     <footer class="footer-Container">
         <a class="footer-anchor" href="https://github.com/Gaston-Herrlein" target="_blank">
             <img class="footer-img" src="assets/github.svg" alt="logo-github">
