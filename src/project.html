@@ -7,7 +7,7 @@
     <title>Gaston Herrlein</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/nav-bar.css">
-    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/mq-video.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -37,15 +37,16 @@
         </nav>
     </header>
 
-    <main>
-        <section class="banner-container">
-            <div class="banner-image"></div>
-            <div class="banner-text">
-                <h1>HOLA MUNDO</h1>
-                <!-- VIDEO Y PROYECTOS-->
-            </div>
-        </section>
-    </main>
+    <video width="100%" height="auto" loop autoplay muted>
+        <source id="v-426" src="/assets/video-426px.mp4" type="video/mp4">
+        <source id="v-960" src="/assets/video-960px.mp4" type="video/mp4">
+        <source id="v-1280" src="/assets/video-1280px.mp4" type="video/mp4">
+        <p>Tu navegador no admite la etiqueta de video.</p>
+    </video>
+
+    <section class="grid">
+
+    </section>
 
     <footer class="footer-Container">
         <a class="footer-anchor" href="https://github.com/Gaston-Herrlein" target="_blank">

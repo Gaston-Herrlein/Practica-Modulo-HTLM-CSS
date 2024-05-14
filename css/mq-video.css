@@ -1,0 +1,35 @@
+@media (max-width: 425px) {
+  #v-426 {
+    display: block;
+  }
+  #v-960 {
+    display: none;
+  }
+  #v-1280 {
+    display: none;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  #v-426 {
+    display: none;
+  }
+  #v-960 {
+    display: block;
+  }
+  #v-1280 {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  #v-426 {
+    display: none;
+  }
+  #v-960 {
+    display: none;
+  }
+  #v-1280 {
+    display: block;
+  }
+}
