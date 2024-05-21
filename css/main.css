@@ -87,6 +87,21 @@ ul {
   }
   /*---------------------------------------------*/
 
+  /*-----------------MEDIA QUERY DE ABOUT-ME---------------*/
+  .AboutMe-text {
+    width: 90%;
+  }
+
+  .AboutMe-text > p::after {
+    content: "Estos proyectos no solo me permiten consolidar mi comprensión de los temas, sino que también me brindan la oportunidad de explorar nuevas ideas y enfoques en el campo de la informática.";
+  }
+
+  .AboutMe-text-shadow {
+    margin-top: 0.7rem;
+    font-size: 1.5rem;
+  }
+  /*--------------------------------------------------------*/
+
   /*--------------MEDIA QUERY CONTACT-------------*/
   div.container-flex-row > img {
     display: block;
@@ -95,6 +110,19 @@ ul {
         background: linear-gradient(0deg, rgba(0, 49, 64, 1) 0%, transparent 100%)
     } */
   /*------------------------------------------------*/
+}
+
+@media (min-width: 1024px) {
+  /*-----------------MEDIA QUERY DE ABOUT-ME---------------*/
+  .AboutMe-text {
+    margin-bottom: 1rem;
+  }
+
+  .AboutMe-text-shadow {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  /*--------------------------------------------------------*/
 }
 
 @media (min-width: 1440px) {
