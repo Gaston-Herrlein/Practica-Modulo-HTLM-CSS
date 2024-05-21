@@ -1,0 +1,42 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+
+  padding: 0 0.5rem;
+}
+
+div.container-project {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  border: solid 5px grey;
+  padding: 5px 2px;
+}
+
+.container-project > a > h2,
+.container-project > p {
+  font-size: var(--text-size);
+  text-align: center;
+}
+
+.container-stack {
+  border: solid 2px black;
+  border-radius: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 5px;
+}
+
+.container-stack > img {
+  width: 25px;
+  border: solid 2px black;
+  border-radius: 25px;
+  overflow: hidden;
+}
