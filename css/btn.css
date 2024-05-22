@@ -25,7 +25,7 @@ button.btn.submit::before {
 }
 
 button.btn.submit::after {
-  content: "Submit";
+  content: "Enviar";
   position: absolute;
   top: 1px;
   left: 1px;
@@ -52,7 +52,7 @@ button.btn.reset::before {
 }
 
 button.btn.reset::after {
-  content: "Reset";
+  content: "Cancelar";
   position: absolute;
   top: 1px;
   left: 1px;
