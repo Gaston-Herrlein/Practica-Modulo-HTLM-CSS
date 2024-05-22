@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaston Herrlein</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/nav-bar.css">
+    <link rel="stylesheet" href="./css/mq-video.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <header>
         <img class="brand" src="/assets/Brand.png"></img>
@@ -17,35 +23,107 @@
             <input class="menu-hamburguesa" type="checkbox" id="menu-hamburguesa">
             <ul class="ul-menu">
                 <li class="li-menu">
-                    <a href="#">Home</a>
+                    <a href="./index.html#home">Inicio</a>
+                </li>
+                <li class="li-menu">
+                    <a href="./project.html">Proyectos</a>
+                </li>
+                <li class="li-menu">
+                    <a href="./index.html#skills">Stack</a>
+                </li>
+                <li class="li-menu">
+                    <a href="./index.html#contact">Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="banner-container">
-            <div class="banner-image"></div>
-            <div class="banner-text">
-                <h1>HOLA MUNDO</h1>
-                <!-- VIDEO Y PROYECTOS-->
+    <video class="fade-in" width="100%" height="auto" loop autoplay muted>
+        <source id="v-426" src="/assets/video-426px.mp4" type="video/mp4">
+        <source id="v-960" src="/assets/video-960px.mp4" type="video/mp4">
+        <source id="v-1280" src="/assets/video-1280px.mp4" type="video/mp4">
+        <p>Tu navegador no admite la etiqueta de video.</p>
+    </video>
+
+    <section class="projects-grid mb-l">
+        <div class="container-project">
+            <img src="./assets/data-analytics.png" width="50%" alt="Project Data Analitics whidt">
+            <a class="mb-s" href="https://github.com/Gaston-Herrlein/app-web-data-analytics-PP" target="_blank">
+                <h2>Data analitics</h2>
+            </a>
+            <p class="mb-s">
+                Este proyecto consiste en consiste en cargar y filtrar datos desde una hoja de calculo para entregar
+                metricas en base a los datos obtenidos.
+            </p>
+            <div class="container-stack">
+                <img src="./assets/python.svg" alt="logo Python">
+                <img src="./assets/pandas.svg" alt="logo pandas">
+                <img src="./assets/bootstrap.svg" alt="logo bootstrap">
             </div>
-        </section>
-    </main>
+        </div>
+
+        <div class="container-project">
+            <img src="./assets/ruleta.png" width="50%" alt="Project Data Analitics whidt">
+            <a class="mb-s" href="https://github.com/Gaston-Herrlein/Roulette" target="_blank">
+                <h2>Ruleta dinamica</h2>
+            </a>
+            <p class="mb-s">
+                Con el objetivo de mejorar mis conocimientos en React cree una ruleta, dandole la
+                libertad al usuario de elegir en cuantas partes fraccionarla y que escribir en cada una.
+            </p>
+            <div class="container-stack">
+                <img src="./assets/react.svg" alt="logo react">
+                <img src="./assets/html5.svg" alt="logo html">
+                <img src="./assets/css.svg" alt="logo css">
+            </div>
+        </div>
+
+        <div class="container-project">
+            <img src="./assets/poker.png" width="50%" alt="Project Data Analitics whidt">
+            <a class="mb-s" href="https://github.com/Gaston-Herrlein/Poker-Game" target="_blank">
+                <h2>Juego de poker</h2>
+            </a>
+            <p class="mb-s">
+                Utilizando el lenguaje java y aplicando principios SOLID cree un juego de poker, el cual tiene el
+                potencial de escalar utilizando IA para mejorar la experiencia de juego.
+            </p>
+            <div class="container-stack">
+                <img src="./assets/java.svg" alt="logo java">
+                <img src="./assets/spring.svg" alt="logo Spring">
+            </div>
+        </div>
+
+        <div class="container-project">
+            <img src="./assets/connecta.png" width="50%" alt="Project Data Analitics whidt">
+            <a class="mb-s" href="https://github.com/Gaston-Herrlein/Connecta" target="_blank">
+                <h2>Connecta</h2>
+            </a>
+            <p class="mb-s">
+                Como parte del Pre-Bootcamp de KC y con el fin de una introduccion a logica de programacion,
+                testing, IA y ML, se programa el juego de Connecta con Python y Pytest.
+            </p>
+            <div class="container-stack">
+                <img src="./assets/python.svg" alt="logo python">
+                <img src="https://docs.pytest.org/en/8.0.x/_static/pytest_logo_curves.svg" alt="logo pytest">
+            </div>
+        </div>
+    </section>
 
     <footer class="footer-Container">
         <a class="footer-anchor" href="https://github.com/Gaston-Herrlein" target="_blank">
-            <img class="footer-img" src="assets/github.svg" alt="logo-github">
+            <img class="footer-img" src="../assets/github.svg" alt="logo-github">
             <span class="footer-span">GitHub</span>
         </a>
         <a class="footer-anchor" href="https://www.linkedin.com/in/gaston-herrlein/" target="_blank">
-            <img class="footer-img" src="assets/linkedin.svg" alt="logo-linkedin">
+            <img class="footer-img" src="../assets/linkedin.svg" alt="logo-linkedin">
             <span class="footer-span">Linkedin</span>
         </a>
         <a class="footer-anchor" href="mailto:herrleingaston@gmail.com" target="_blank">
-            <img class="footer-img" src="assets/email.svg" alt="logo-email">
+            <img class="footer-img" src="../assets/email.svg" alt="logo-email">
             <span class="footer-span">Email</span>
         </a>
     </footer>
 
 </body>
+
 </html>

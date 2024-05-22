@@ -1,0 +1,42 @@
+.banner-container {
+  height: 100dvh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image {
+  position: absolute;
+  opacity: 0.8;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("/assets/Banner-movil.jpg");
+  background-size: 370px;
+}
+
+.banner-text {
+  background-color: whitesmoke;
+  opacity: 0.7;
+  text-align: center;
+  width: 70%;
+  max-width: 768px;
+  z-index: 1000;
+  padding: 5px 5px;
+}
+
+.banner-text h2 {
+  margin: 0 0 5px 0;
+  font-size: var(--text-size-Title);
+}
+
+.banner-text h1 {
+  margin: 0 0 5px 0;
+  font-size: var(--text-size-Title);
+}
+
+.banner-text p {
+  font-size: var(--text-size);
+}

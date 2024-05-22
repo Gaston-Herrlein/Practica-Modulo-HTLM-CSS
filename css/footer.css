@@ -1,0 +1,22 @@
+.footer-Container {
+  background-color: var(--bg-color-footer);
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.footer-img {
+  height: 32px;
+}
+
+.footer-anchor {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.footer-span {
+  font-size: 0.8rem;
+  color: var(--secondary-text-color);
+}

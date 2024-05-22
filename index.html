@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaston Herrlein</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/about-me.css">
+    <link rel="stylesheet" href="css/contact-form.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <header>
         <img class="brand" src="/assets/Brand.png"></img>
@@ -17,23 +25,23 @@
             <input class="menu-hamburguesa" type="checkbox" id="menu-hamburguesa">
             <ul class="ul-menu">
                 <li class="li-menu">
-                    <a href="#">Home</a>
+                    <a href="./index.html#home">Inicio</a>
                 </li>
                 <li class="li-menu">
-                    <a href="#">Proyectos</a>
+                    <a href="./project.html">Proyectos</a>
                 </li>
                 <li class="li-menu">
-                    <a href="#">Skills</a>
+                    <a href="./index.html#skills">Stack</a>
                 </li>
                 <li class="li-menu">
-                    <a href="#">Contacto</a>
+                    <a href="./index.html#contact">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <section class="banner-container">
+        <section class="banner-container" id="home">
             <div class="banner-image  mb-l"></div>
             <div class="banner-text">
                 <h2>GASTON HERRLEIN</h2>
@@ -44,26 +52,26 @@
             </div>
         </section>
 
-        <section class="AboutMe-container">
+        <section class="AboutMe-container" id="skills">
             <h2>SOBRE MI</h2>
             <div class="AboutMe-text">
                 <p>
-                    Me llamo Gastón. Desde chico soy muy curioso por lo que 
-                    siempre me llamo la atención el mundo de la computación y como esta funcionaba.    
+                    Me llamo Gastón. Desde chico soy muy curioso por lo que
+                    siempre me llamo la atención el mundo de la computación y como esta funcionaba. <br>
+                    Me gusta pensar que comprendo algo cuando puedo <b>Explicarlo</b>
+                    y <b>Aplicarlo</b>. Por este motivo, me dedico a realizar diversos proyectos
+                    personales con el objetivo de experimentar y poner en práctica los conocimientos adquiridos.
                 </p>
-                <p>
-                    Me gusta pensar que comprendo algo cuando puedo <b>Explicarlo</b> 
-                    y <b>Aplicarlo</b>. Por esta razón, suelo llevar a cabo pequeños proyectos con el fin de experimentar con lo aprendido.
-                </p>
-                <span class="AboutMe-tet-shadow mb-l">¡Preparado para abordar nuevos desafíos!🚀</span> 
+                <span class="AboutMe-text-shadow mb-l">¡Preparado para abordar nuevos desafíos!🚀</span>
             </div>
-            <h2 class="mb-s">SKILLS</h2>
+            <h2 class="mb-s">STACK</h2>
             <section class="section-container-grid">
                 <div class="skills-container">
                     <div class="circular-before-progress rotate-80">
                         <div class="circular-after-progress">
                             <div class="circular-brand-hiden">
-                                <img class="circular-brand-image brand-python"   src="/assets/python.svg" alt="logo Python"></img>
+                                <img class="circular-brand-image brand-python" src="/assets/python.svg"
+                                    alt="logo Python"></img>
                                 <h4 class="circular-text">Python</h4>
                             </div>
                         </div>
@@ -80,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="skills-container">
                     <div class="circular-before-progress rotate-60">
                         <div class="circular-after-progress">
@@ -118,13 +126,14 @@
                     <div class="circular-before-progress rotate-60">
                         <div class="circular-after-progress">
                             <div class="circular-brand-hiden">
-                                <img class="circular-brand-image" src="/assets/javascript.svg" alt="logo JavaScript"></img>
+                                <img class="circular-brand-image" src="/assets/javascript.svg"
+                                    alt="logo JavaScript"></img>
                                 <h4 class="circular-text">JS</h4>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="skills-container">
                     <div class="circular-before-progress rotate-50">
                         <div class="circular-after-progress">
@@ -173,7 +182,8 @@
                     <div class="circular-before-progress rotate-20">
                         <div class="circular-after-progress">
                             <div class="circular-brand-hiden">
-                                <img class="circular-brand-image" src="/assets/bootstrap.svg" alt="logo Bootstrap"></img>
+                                <img class="circular-brand-image" src="/assets/bootstrap.svg"
+                                    alt="logo Bootstrap"></img>
                                 <h4 class="circular-text">Bootstrap</h4>
                             </div>
                         </div>
@@ -184,7 +194,8 @@
                     <div class="circular-before-progress rotate-50">
                         <div class="circular-after-progress">
                             <div class="circular-brand-hiden">
-                                <img class="circular-brand-image" src="/assets/postgresql.svg" alt="logo PostgreSQL"></img>
+                                <img class="circular-brand-image" src="/assets/postgresql.svg"
+                                    alt="logo PostgreSQL"></img>
                                 <h4 class="circular-text">Postgre</h4>
                             </div>
                         </div>
@@ -194,67 +205,79 @@
         </section>
     </main>
 
-    <h2 class="aling-center">Contacto</h2>
-    <div class="container-flex">
-        <form method="post" action="/contact">
-            <div class="form-elemen mb-s">
-                <label for="firstname">Nombre</label>
-                <input style="background-color: rgba(0,0,0,0.1)" name="firstname" type="text" id="firstname" required />
-            </div>
+    <div class="container-flex bg-contact" id="contact">
+        <h2>Contacto</h2>
+        <div class="container-flex-row">
+            <img src="./assets/giphy.gif" alt="Programando">
+            <form method="post" action="/contact">
+                <div class="form-element mb-s">
+                    <label for="firstname">Nombre</label>
+                    <input name="firstname" type="text" id="firstname" required placeholder="Gastón" />
+                </div>
 
-            <div class="form-element mb-s">
-                <label for="lastname">Apellido</label>
-                <input name="lastname" type="text" id="lastname" required />
-            </div>
+                <div class="form-element mb-s">
+                    <label for="lastname">Apellido</label>
+                    <input name="lastname" type="text" id="lastname" required placeholder="Herrlein" />
+                </div>
 
-            <div class="form-element mb-s">
-                <label for="phone">Telefono</label>
-                <input type="tel" id="phone" name="Telefono" required placeholder="111-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Formato 111-123-4567" />
-            </div>
+                <div class="form-element mb-s">
+                    <label for="phone">Telefono</label>
+                    <input type="tel" id="phone" name="Telefono" required placeholder="111 123456"
+                        pattern="[0-9]{3} [0-9]{6}" title="Formato 111-123-4567" />
+                </div>
 
-            <fieldset class="form-element mb-s">
-                <legend>¿Cómo me conociste?</legend>
-                <ul class="form-element-ul">
-                    <li>
-                        <label for="university">universidad</label>
-                        <input type="radio" id="university" name="Como-me-conociste" value="university" checked />
-                    </li>
-                    <li>
-                        <label for="keepcoding">Keepcoding kick-off</label>
-                        <input type="radio" id="keepcoding" name="Como-me-conociste" value="keepcoding" />
-                    </li>
-                    <li>
-                        <label for="school">Escuela</label>
-                        <input type="radio" id="school" name="Como-me-conociste" value="school" />
-                    </li>
-                    <li>
-                        <label for="github">Github</label>
-                        <input type="radio" id="github" name="Como-me-conociste" value="github" />
-                    </li>
-                </ul>
-            </fieldset>
+                <fieldset class="form-element mb-s">
+                    <legend>¿Cómo me conociste?</legend>
+                    <ul>
+                        <li>
+                            <label for="university">Universidad</label>
+                            <input type="radio" id="university" name="Como-me-conociste" value="university" checked />
+                        </li>
+                        <li>
+                            <label for="keepcoding">Keepcoding kick-off</label>
+                            <input type="radio" id="keepcoding" name="Como-me-conociste" value="keepcoding" />
+                        </li>
+                        <li>
+                            <label for="school">Escuela</label>
+                            <input type="radio" id="school" name="Como-me-conociste" value="school" />
+                        </li>
+                        <li>
+                            <label for="github">Github</label>
+                            <input type="radio" id="github" name="Como-me-conociste" value="github" />
+                        </li>
+                    </ul>
+                </fieldset>
 
-            <div class="form-element mb-s">
-                <label for="githubUser">Usuario Github</label>
-                <input type="text" id="githubUser" name="githubUser" required placeholder="@username" pattern="^@[^\s]+" title="Format @username" />
-            </div>
+                <div class="form-element color-white mb-s">
+                    <label for="githubUser">Usuario Github</label>
+                    <input type="text" id="githubUser" name="githubUser" required placeholder="@username"
+                        pattern="^@[^\s]+" title="Format @username" />
+                </div>
 
-            <div class="form-element container-flex-column mb-s">
-                <label for="message">Mensaje</label>
-                <textarea name="message" id="message" required></textarea>
-            </div>
+                <div class="form-element container-flex color-white mb-s">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" required maxlength="180"></textarea>
+                </div>
 
-            <div class="form-element form-element-checkbox mb-s">
-                <label for="newsletter">¿Quiere suscribirse a la newsletter?</label>
-                <input type="checkbox" name="newsletter" id="newsletter" value="selected" checked />
-            </div>
+                <div class="form-element color-white form-element-checkbox mb-s">
+                    <label for="newsletter">¿Quiere suscribirse a la newsletter?</label>
+                    <input type="checkbox" name="newsletter" id="newsletter" value="selected" checked />
+                </div>
 
-            <div class="form-buttons mb-l">
-                <input class="btn-reset" type="reset" value="Reset form" />
-                <input class="btn-submit" type="submit" value="Submit" />
-            </div>
-        </form>
+                <div class="container-buttons mb-l">
+                    <button class="btn submit" type="submit" value="Submit">
+                        <span></span>
+                        Boton
+                    </button>
+                    <button class="btn reset" type="reset" value="Reset form">
+                        <span></span>
+                        Reset
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
+
     <footer class="footer-Container">
         <a class="footer-anchor" href="https://github.com/Gaston-Herrlein" target="_blank">
             <img class="footer-img" src="assets/github.svg" alt="logo-github">
@@ -264,10 +287,11 @@
             <img class="footer-img" src="assets/linkedin.svg" alt="logo-linkedin">
             <span class="footer-span">Linkedin</span>
         </a>
-        <a class="footer-anchor" href="mailto:herrleingaston@gmail.com" target="_blank">
+        <a class="footer-anchor" href="mailto:example@mail.com" target="_blank">
             <img class="footer-img" src="assets/email.svg" alt="logo-email">
             <span class="footer-span">Email</span>
         </a>
     </footer>
 </body>
+
 </html>
