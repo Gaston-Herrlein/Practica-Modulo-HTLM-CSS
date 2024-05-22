@@ -49,7 +49,7 @@ ul {
 /*-----------------MEDIA QUERY-----------------*/
 @media (min-width: 425px) {
   .banner-image {
-    background-image: url("/assets/Banner-425px.jpg");
+    background-image: url("../assets/Banner-425px.jpg");
   }
   .section-container-grid {
     grid-template-columns: auto auto;
